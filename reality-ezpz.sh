@@ -338,7 +338,7 @@ function uninstall {
 function install_packages {
   if ! which jq qrencode > /dev/null 2>&1; then
     if which apt > /dev/null 2>&1; then
-      sudo apt update
+      # sudo apt update
       sudo apt install qrencode jq -y
       return 0
     fi
